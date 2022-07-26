@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    background-color: rgb(227, 209, 244);
+
+
+
+    
+}
+
+.griGral{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "encabezado encabezado encabezado"
+    "menuHeader menuHeader menuHeader"
+     "pieDePagina pieDePagina pieDePagina";
+}
+
+.logo{
+    width: 30%;
+    margin-left: 5px;
+   
+}
+    
+
+
+.encabezado{
+    grid-area: encabezado;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+   
+
+           
+}
+
+
+
+.menuHeader ul, footer ol{
+    grid-area: menuHeader;
+    display: flex;
+    margin-right: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menuHeader ul li{
+    list-style-type:none;
+
+}
+ul li a { 
+text-decoration: none;
+margin: 0 20px;
+color:black;
+
+}
+
+.pieDePagina{
+ grid-area: pieDePagina;
+ height: 200px;
+display: flex;
+
+}
+.imgP{
+width:1fr 1fr 1fr;
+height:100%;
+}
+
+@
+        
+    
+    
