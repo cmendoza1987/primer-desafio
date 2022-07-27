@@ -3,7 +3,11 @@
     margin:0;
 }
 body{
-    background-color: rgb(227, 209, 244);
+background: #283048;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /* background-color: rgb(227, 209, 244); */
 
 
 
@@ -20,6 +24,7 @@ body{
 }
 
 .logo{
+    
     width: 30%;
     margin-left: 5px;
    
@@ -73,7 +78,20 @@ width:1fr 1fr 1fr;
 height:100%;
 }
 
-@
-        
-    
+@keyframes texto {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+h2 {
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
     
