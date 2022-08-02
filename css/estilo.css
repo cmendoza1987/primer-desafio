@@ -91,3 +91,7 @@ h2 {
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
